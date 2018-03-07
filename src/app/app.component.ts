@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  name = 'app';
+  name = 'ww';
+  url = 'https://www.google.com';
+
+  zzz(){
+     console.log('1123');
+
+  }
 }
