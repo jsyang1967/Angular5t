@@ -6,11 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  name = 'ww';
-  url = 'https://www.google.com';
-
-  zzz(){
-     console.log('1123');
-
+  aaa:Account = {
+    accout:'lux',
+    passwd:'abc123'
   }
+ 
+
+  // zzz(){
+  //    console.log('1123');
+  // }
+}
+
+
+export interface Account{
+  accout:string,
+  passwd:string
 }

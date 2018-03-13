@@ -1,0 +1,27 @@
+<!-- <p>
+  lesson3 works!
+</p> -->
+<ul>
+<!--   <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li> -->
+<li *ngFor="let item of weekday">{{item}}</li>
+</ul>
+
+<ul>
+   <li *ngFor="let item of user">{{item['name']}}</li>
+  </ul>
+
+  <ul>
+    <li *ngFor="let sc of score">{{sc}}</li>
+   </ul>
+
+   <ul>
+    <li *ngFor="let sc of num">{{sc}}</li>
+   </ul>
+
+   {{now | date:'yyyy-MM-dd'}}
+
+   <p>{{ 'example' | repeat: 3: '@' }}</p> <!-- Output: "example@example@example" -->
+
