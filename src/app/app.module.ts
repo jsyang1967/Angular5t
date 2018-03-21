@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { Lesson1Component } from './lesson1/lesson1.component';
@@ -20,6 +20,11 @@ import { DyclassComponent } from './dyclass/dyclass.component';
 import { Jq1Component } from './jq1/jq1.component';
 import { Lesson7Component } from './lesson7/lesson7.component';
 import { BmiService } from './bmi.service';
+import { CallhttpComponent } from './callhttp/callhttp.component';
+import { HttpService } from './http.service';
+
+import { HttpClientModule } from '@angular/common/http';
+import { NgModelDrivenComponent } from './ng-model-driven/ng-model-driven.component';
 
 @NgModule({
   declarations: [
@@ -37,16 +42,21 @@ import { BmiService } from './bmi.service';
     Lesson61Component,
     DyclassComponent,
     Jq1Component,
-    Lesson7Component
+    Lesson7Component,
+    CallhttpComponent,
+    NgModelDrivenComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     NgPipesModule,  //other writing;
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
-    BmiService
+    BmiService,
+    HttpService
   ],
   bootstrap: [AppComponent]
 })
